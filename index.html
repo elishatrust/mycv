@@ -4,173 +4,274 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elisha's Personal Site</title>
+    <title>Elisha's Personal Curriculum Vitae</title>
+    <link rel="stylesheet" href="/css/fontawsom-all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <style>
-        body{background: silver;margin: 0;padding: 0;}
+        body{background: #e4e4e4;margin: 0;padding: 0;font-family: "mouse-500", Arial, Helvetica, sans-serif;}
         p,td,li{text-align: justify;}
-        .profile img{height: 200px;padding:5px;border-radius: 50%;}
+        .profile img{height: 200px;padding: 5px;border-radius: 50%; border: 1px dotted grey;}
         @media (max-width: 550px) { 
-            h2,h3{font-size: 20px;}
+            h2,h4{font-size: 20px;}
             .profile img{height: 150px;}
         }
     </style>
 </head>
-<body class="bg-light">
-<div class="all container p-5 my-5 card shadow">
-    <!-- profile -->
-    <div class="profile">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/dpa.jpg" alt="Elisha's Profile Picture">
-            </div>
-            <div class="col-md-8">
-                <h2>Elisha Bwilukiro R,</h2>
-                <p class="lead">Software Developer</p>
-                <p>Former student of <em><strong>
-                    <a href="http://www.udsm.ac.tz">University of Dar es Salaam</a>,</strong>
-                <br><a href="http://www.coict.udsm.ac.tz">College of Information & Communication Technologies</a>,
-                <br><a href="https://cse.udsm.ac.tz/">Department of Computer Science & Engineering</a>
-                <br>BSc. In Computer Science</em></p>
+<body>
+    <div class="all container p-5 my-5 card shadow" id="printableDiv">
+        
+        <!-- profile -->
+        <div class="profile" id="top">
+            <div class="row">
+                <div class="col-md-4">
+                    <div><img src="img/dpb.JPG" alt="Elisha's Profile Picture"></div>
+                    <button onclick="printDiv('printableDiv')" class="btn btn-secondary btn-sm mt-1" style="margin-left: 20px;">
+                        Download Profile
+                    </button>
+                </div>
+                <div class="col-md-8">
+                    <h1>Elisha Bwilukiro R,</h1>
+                    <p class="lead">Software/Web Developer</p>
+                    <p>Former student of <em><strong>
+                        <a href="http://www.udsm.ac.tz">University of Dar es Salaam</a>,</strong>
+                    <br><a href="http://www.coict.udsm.ac.tz">College of Information & Communication Technologies</a>,
+                    <br><a href="https://cse.udsm.ac.tz/">Department of Computer Science & Engineering</a>
+                    <br>BSc. In Computer Science</em></p>
+                </div>
             </div>
         </div>
-    </div>
-    <hr size="4" noshade>
-
-    <!-- about -->
-    <div class="about">
-        <p>I am bright thinker of everything. Mathematically included, I have totally a 
-            problematic view of everything. I wanna adopt all those skills that are required
-            in this broadly developing society. Making an Imaginary thinking a real perspective
-            is not at all a tedious task I contemplate. <span class="lead">For me Just Think, Learn & Analyze.</span> 
-        </p>
-    </div>
-    <hr size="4" noshade>
-
-    <!-- language -->
-    <div class="language">
-        <h3>Languages Proficiency & Fluency</h3>
-        <ul>
-            <li>Swahili | Read - Write - Speak | <span> 100%</span></li>
-            <li>English | Read - Write - Speak | <span> 100%</span></li>
-        </ul>
-    </div>
-    <hr size="4" noshade>
-
-    <!-- educational-journey -->
-    <div class="educational">
-        <h3>Educational Journey</h3>
-        <div class="table-responsive">
-            <table class="table" cellspacing="0" border="1">
-                <thead>
-                    <tr>
-                        <th>SCHOOL/COLLEGE</th>
-                        <th>YEAR</th>
-                        <th>AWARDED</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="http://www.udsm.ac.tz">University of Dar es Salaam</a></td>
-                        <td>2017 - 2020</td>
-                        <td>Bachelor of Science in Computer Science</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Musoma Technical High School</a></td>
-                        <td>2013 - 2015</td>
-                        <td>Certificate of Advanced Education Examination</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Nyamanoro Secondary School</a></td>
-                        <td>2008 - 2012</td>
-                        <td>Certificate of Secondary Education Examination</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Mkudi Primary School</a></td>
-                        <td>2001 - 2007</td>
-                        <td>Certificate of Primary Education Examination</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <hr size="4" noshade>
-
-    <!-- skills -->
-    <div class="skills">
-        <h3>Skills</h3>
-        <p>I am Software Developer expert with field experience and competence in the following sub-field</p>
-        <ul>
-            <li>System analysis, design, development and management</li>
-            <li>Programming Languages (Java SE, C++, C, PHP, JavaScript, Python, SQL)</li>
-            <li>Frameworks & Libraries  (Laravel, Codeigniter, Reactjs, Nodejs, jQuery, Tailwindcss & Bootstrap)</li>
-            <li>Scripts Languages (HTML, CSS, SCSS)</li>
-            <li>Database Management System (Oracle, MySQL, MariaDB, PostgreSQL, SQLite)</li>
-            <li>Tool  (Git, Github, Wordpress, Elementor, FTP, Microsoft office, Adobe Photoshop, MSVisio, Draw.io, Star UML, SPSS Statistics)  </li>  
-            <li>Full Linux course</li>
-            <li>Cloud Services (AWS, Azure) </li>
-            <li>Platform  (Windows and Linux) </li> 
-        </ul>
-    </div>
-    <hr size="4" noshade>
-
-    <!-- other-skills -->
-    <div class="other-skills">
-        <h3>Other Skills</h3>
-        <ul type='i'>
-            <li>Software design and implementation</li>
-            <li>Software installation</li>
-            <li>Computer maintenance</li>
-            <li>Trouble shooting of computer</li>
-            <li>Principle of Computer Security</li>
-            <li>Report writing and</li>
-            <li>Documentation</li>
-        </ul>
-    </div>
-    <hr size="4" noshade>
-
-    <!-- hobby -->
-    <div class="hobby">
-        <h3>My Values</h3>
-        <ol>
-            <li>Responsibility</li>
-            <li>Honest and</li>
-            <li>Respect.</li>
-        </ol>
         <hr size="4" noshade>
-        <h3>Personal Interest</h3>
-        <ol>
-            <li>Reading Newspapers, magazine, books and report</li>
-            <li>Coding and designing</li>
-            <li>Watching tutorials</li>
-            <li>Watching movies, cartoons, soccer, gaming and</li>
-            <li>Traveling</li>
-        </ol>
-    </div>
-    <hr size="4" noshade>
 
-    <!-- contact -->
-    <div class="contact">
-        <h3>Social Contact Details</h3>
-        <p><i class="bi bi-whatsapp"></i> <a target="_blank" href="tel:0653064129">0653 064 129 </a> | <a href="tel:0769630580">0769 630 580</a></p>
-        <p><i class="bi bi-envirop"></i> <a target="_blank" href="mailto:bwilukiroelisha@gmail.com">bwilukiroelisha@gmail.com</a></p>
-        <p><i class="bi bi-facebook"></i> <a target="_blank" href="https://web.facebook.com/elisha.bwilukiro.3/">Facebook</a></p>
-        <p><i class="bi bi-twitter"></i> <a target="_blank" href="https://twitter.com/YesIamElisha">Twitter</a></p>
-        <p><i class="bi bi-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/elisha-bwilukiro-744087152/">LinkedIn</a></p>
-        <p><i class="bi bi-github"></i> <a target="_blank" href="https://github.com/elishatrust">GitHub</a></p>
-    </div>
-    <hr size="4" noshade>
+        <!-- About -->
+        <div class="about">
+            <h4 class="py-2"><i class="bi bi-person-fill me-3"></i> About Me</h4>
+            <p>
+                I am a skilled <em><b>software designer and developer</b></em> due to my extensive background in software design and
+                development (web apps). I am committed to continuing to learn about new trends and emerging technology
+                concepts that have made me invaluable. With more than four years of experience in web design and
+                development, my expertise can help clients improve their websites, solve their requirements, and attract an
+                increasing number of customers. Core technical skills include <em><b>PHP, JavaScript, Java, C/C++, Linux and
+                Database management.</b></em> 
+                <br><span class="lead">For me Just Think, Learn & Analyze.</span>
+            </p>
+        </div>
+        <hr size="4" noshade>
 
-    <div class="end text-center text-info">
-        <a href="index.html" class="btn btn-default">Move to Top</a>
-    </div>
+        <!-- Language -->
+        <div class="language">
+            <h4 class="py-2"><i class="bi bi-translate me-3"></i> Languages Proficiency & Fluency</h4>
+            <ul>
+                <li>Swahili | Read - Write - Speak | <span> 100%</span></li>
+                <li>English | Read - Write - Speak | <span> 100%</span></li>
+            </ul>
+        </div>
+        <hr size="4" noshade>
 
-</div>
+        <!-- Career -->
+        <div class="career">
+            <h4 class="py-2"><i class="bi bi-briefcase-fill me-3"></i> Work Experience</h4>
+            <div class="table-responsive">
+                <table class="table" cellspacing="0" border="1">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">YEAR</th>
+                            <th style="width: 80%;">INSTITUTION, PROJECTS & ACTIVITIES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>March 2024 – Present</td>
+                            <td>
+                                <h5><a href="https://gpitg.co.tz/" target="_blank">GPITG COMPANY LTD</a></h5>
+                                <p><em>Backend Software Developer</em></p>
+                                <h5>Projects:</h5>
+                                <ol>
+                                    <li>School Management System</li>
+                                    <li>Electronic Health Management System (e-HMS)</li>
+                                </ol>
+
+                                <h5>Key Responsibilities:</h5>
+                                <ul>
+                                    <li>Designed the overall system architecture, including database schema, user interface structure, and workflow processes.</li>
+                                    <li>Conducted comprehensive requirements gathering through collaboration with stakeholders, healthcare professionals, administrators, and end-users to ensure the system aligned with operational needs.</li>
+                                    <li>Developed and implemented application features and functionalities using appropriate programming languages, frameworks, and web development tools.</li>
+                                    <li>Provided ongoing system maintenance and technical support, including bug fixing, performance optimization, software updates, and addressing user inquiries and issues.</li>
+                                    <li>Contributed to code reviews, documentation, and continuous improvement initiatives.</li>
+                                    <li>Provided support and troubleshooting services to ensure system reliability and minimize downtime.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AUG 2022 – MAR 2024</td>
+                            <td>
+                                <h5><a href="https://www.meliansoftware.com/" target="_blank">MELIAN SOFTWARE COMPANY LTD</a></h5>
+                                <p><em>Software & Web Developer</em></p>
+                                <h5>Projects:</h5>
+                                <ol>
+                                    <li><a href="https://www.wavuvikempu.com/" target="_blank" rel="noopener noreferrer">Wavuvi Kempu</a></li>
+                                    <li><a href="https://www.uminolan.co.tz/" target="_blank" rel="noopener noreferrer">Agent Super Center - Mixx By Yas (Data Collection Tool)</a></li>
+                                    <li><a href="https://gusa.co.tz/" target="_blank" rel="noopener noreferrer">Gusa Events</a></li>
+                                    <li><a href="https://zillic.co.tz/" target="_blank">Zillic East Africa Limited</a></li>
+                                    <li><a href="https://melianfoundation.or.tz/" target="_blank" rel="noopener noreferrer">Melian Foundation</a></li>
+                                    <li><a href="https://umojapharmaceuticals.co.tz/" target="_blank" rel="noopener noreferrer">Umoja Pharmaceuticals</a></li>
+                                    <li><a href="https://www.bintimabutu.co.tz" target="_blank" rel="noopener noreferrer">Binti Mabutu Natural Hair Salon</a></li>
+                                    <li><a href="https://everydaysafaris.com/" target="_blank" rel="noopener noreferrer">Everyday Safaris - A premier tour company</a></li>
+                                    <li><a href="https://www.hertufarms.co.tz/" target="_blank" rel="noopener noreferrer">Hertu Farms Mushrooms – (E-commerce Web App)</a></li>
+                                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Health &amp; Development Initiatives</a></li>
+                                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Tanzania Fisheries Modern Village – TAFIMO</a></li>
+                                    <li><a href="http://" target="_blank" rel="noopener noreferrer">School Management System</a></li>
+                                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Zanzibar Homecare - Data Collector Application</a></li>
+                                </ol>    
+                                
+                                <h5>Key Responsibilities:</h5>
+                                <ul>
+                                    <li>Gathering and understanding client and stakeholder requirements for software development.</li>
+                                    <li>Designing and building software systems that are reliable and easy to scale.</li>
+                                    <li>Creating layouts and simple prototypes to improve user experience.</li>
+                                    <li>Providing technical support and ensuring high-quality service for clients.</li>
+                                    <li>Managing resources and making sure projects are completed efficiently.</li>
+                                    <li>Maintaining software by fixing bugs and improving system performance.</li>
+                                    <li>Working with teams such as designers, testers, and managers to complete projects.</li>
+                                    <li>Writing clear documentation and manuals for systems and users.</li>
+                                    <li>Training users and offering support to help them use the systems effectively.</li>
+                                    <li>Learning new technologies and suggesting improvements to development processes.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr size="4" noshade>
+
+        <!-- Educational -->
+        <div class="educational">
+            <h4 class="py-2"><i class="bi bi-mortarboard-fill me-3"></i> Education</h4>
+            <div class="table-responsive">
+                <table class="table" cellspacing="0" border="1">
+                    <thead>
+                        <tr>
+                            <th>SCHOOL/COLLEGE</th>
+                            <th>YEAR</th>
+                            <th>AWARDED</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="http://www.udsm.ac.tz">University of Dar es Salaam</a></td>
+                            <td>2017 - 2020</td>
+                            <td>Bachelor of Science in Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Musoma Technical High School</a></td>
+                            <td>2013 - 2015</td>
+                            <td>Certificate of Advanced Education Examination</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Nyamanoro Secondary School</a></td>
+                            <td>2008 - 2012</td>
+                            <td>Certificate of Secondary Education Examination</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Mkudi Primary School</a></td>
+                            <td>2001 - 2007</td>
+                            <td>Certificate of Primary Education Examination</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr size="4" noshade>
+
+        <!-- Skills -->
+        <div class="skills">
+            <h4 class="py-2"><i class="bi bi-gear-fill me-3"></i> Skills</h4>
+            <p>I am Software Developer expert with field experience and competence in the following sub-field</p>
+            <ul>
+                <li>System analysis, design, development and management</li>
+                <li>Programming Languages (Java SE, C++, C, PHP, JavaScript, Python, SQL)</li>
+                <li>Frameworks & Libraries  (Laravel, Codeigniter, Reactjs, Nodejs, jQuery, Tailwindcss & Bootstrap)</li>
+                <li>Scripts Languages (HTML, CSS, SCSS)</li>
+                <li>Database Management System (Oracle, MySQL, MariaDB, PostgreSQL, SQLite)</li>
+                <li>Tool  (Git, Github, Wordpress, Elementor, FTP, Microsoft office, Adobe Photoshop, MSVisio, Draw.io, Star UML, SPSS Statistics)  </li>  
+                <li>Full Linux course</li>
+                <li>Cloud Services (AWS, Azure) </li>
+                <li>Platform  (Windows and Linux) </li> 
+            </ul>
+        </div>
+        <hr size="4" noshade>
+
+        <!-- other-skills -->
+        <div class="other-skills">
+            <h4 class="py-2"><i class="bi bi-award-fill me-3"></i> Other Skills</h4>
+            <ul type='i'>
+                <li>Software design and implementation</li>
+                <li>Software installation</li>
+                <li>Computer maintenance</li>
+                <li>Trouble shooting of computer</li>
+                <li>Principle of Computer Security</li>
+                <li>Report writing and</li>
+                <li>Documentation</li>
+            </ul>
+        </div>
+        <hr size="4" noshade>
+
+        <!-- hobby -->
+        <div class="hobby">
+            <h4 class="py-2"><i class="bi bi-gem me-3"></i> My Values</h4>
+            <ol>
+                <li>Responsibility</li>
+                <li>Honest and</li>
+                <li>Respect.</li>
+            </ol>
+            <hr size="4" noshade>
+            <h4 class="py-2"><i class="bi bi-person-heart me-3"></i> Personal Interest</h4>
+            <ol>
+                <li>Reading Newspapers, magazine, books and report</li>
+                <li>Coding and designing</li>
+                <li>Watching tutorials</li>
+                <li>Watching movies, cartoons, soccer, gaming and</li>
+                <li>Traveling</li>
+            </ol>
+        </div>
+        <hr size="4" noshade>
+
+        <!-- contact -->
+        <div class="contact">
+            <h4 class="py-2"><i class="bi bi-telegram me-3"></i> Social Contact Details</h4>
+            <p><i class="bi bi-whatsapp"></i> <a target="_blank" href="tel:0653064129">0653 064 129 </a> | <a href="tel:0769630580">0769 630 580</a></p>
+            <p><i class="bi bi-envelope-at-fill"></i> <a target="_blank" href="mailto:bwilukiroelisha@gmail.com">bwilukiroelisha@gmail.com</a></p>
+            <p><i class="bi bi-facebook"></i> <a target="_blank" href="https://web.facebook.com/elisha.bwilukiro.3/">Facebook</a></p>
+            <p><i class="bi bi-twitter"></i> <a target="_blank" href="https://twitter.com/YesIamElisha">Twitter</a></p>
+            <p><i class="bi bi-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/elisha-bwilukiro-744087152/">LinkedIn</a></p>
+            <p><i class="bi bi-github"></i> <a target="_blank" href="https://github.com/elishatrust">GitHub</a></p>
+        </div>
+        <hr size="4" noshade>
+
+        <div class="end text-center text-info">
+            <a href="#top" class="btn btn-default">Move to Top</a>
+        </div>
+
+    </div>
     
 </body>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+    <!-- JavaScript to Print Div -->
+    <script>
+        function printDiv(divId) {
+            var divContents = document.getElementById(divId).innerHTML;
+            var printWindow = window.open('', '', 'height=600,width=800');
+            printWindow.document.write('<html><head><title>Print Section</title></head><body>');
+            printWindow.document.write(divContents);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
+            printWindow.close();
+        }
+    </script>
     <script>
         //   Whatsapp chat widget
         var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21528';
@@ -182,7 +283,7 @@
             "enabled":true,
             "chatButtonSetting":{
                 "backgroundColor":"#4dc247",
-                "ctaText":"",
+                "ctaText":"WhatSapp Me",
                 "borderRadius":"25",
                 "marginRight":"0",
                 "marginBottom":"50",
